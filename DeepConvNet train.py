@@ -41,7 +41,7 @@ y_test = torch.tensor(test_label, dtype=torch.int64)
 
 trainset = Data.TensorDataset(X_train, y_train)
 train_loader = torch.utils.data.DataLoader(dataset = trainset, batch_size = BATCH_SIZE, shuffle = True)
-testset = Data.TensorDataset(X_train, y_train)
+testset = Data.TensorDataset(X_test, y_test)
 test_loader = torch.utils.data.DataLoader(dataset = testset, batch_size = BATCH_SIZE, shuffle = True)
 
 
